@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #103766;
+}
+
+header {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: Arial;
+  color: #bdc4d0;
+  margin-top: 30px;
+}
+.konto {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #7ebcf9;
+  border: 8px solid #288cfa;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  position: relative;
+}
+.konto-money {
+  display: grid;
+  text-align: center;
+}
+.ilosc {
+  z-index: 2;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.waluta {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  transform: translate(30px, 0);
+  font-size: 25px;
+  opacity: 0.4;
+  font-family: monospace;
+}
+.detail {
+  width: 250px;
+  height: 150px;
+  font-family: "Segoe UI";
+  user-select: none;
+}
+.my-account {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  margin-top: 20px;
+}
+.detail > div {
+  width: 100%;
+  height: 33.5%;
+  border: solid 3px black;
+  border-image: linear-gradient(
+    90deg,
+    rgb(47, 79, 138) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-image-slice: 1;
+  color: rgb(221, 221, 221);
+  font-weight: 500;
+}
+.detail :nth-child(-n + 2) {
+  border-bottom: none;
+}
+.detail-div {
+  display: flex;
+  place-items: center;
+}
+.currency {
+  letter-spacing: 1.5px;
+}
+.detail-div > span {
+  margin: 5px;
+}
+
+.box-hover {
+  background-color: #0d2b50;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 150px;
+  color: rgb(221, 221, 221);
+  font-family: "Segoe UI";
+  font-weight: 500;
+  position: absolute;
+  user-select: unset;
+  transform: translate(-7%, -110%);
+  display: none;
+  padding: 5px 10px;
+  opacity: 0.8;
+}
+
+.fa-plus {
+  color: rgb(221, 221, 221);
+  cursor: pointer;
+  font-size: 30px;
+}
+.fa-all {
+  font-size: 18px;
+  margin-right: 12px;
+}

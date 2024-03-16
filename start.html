@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="start-style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="box">
+        <div class="box-start">
+          <div class="question">
+            Podaj<br />
+            Kwote i Walute
+          </div>
+
+          <!------------------------------------------------------------>
+          <!-- KWOTA -->
+          <!------------------------------------------------------------>
+
+          <div class="input">
+            <input type="number" id="money" placeholder="" />
+            <label for="money">Money</label>
+            <div class="line"></div>
+          </div>
+
+          <!------------------------------------------------------------>
+          <!-- WALUTA -->
+          <!------------------------------------------------------------>
+
+          <div class="opcje">
+            <div class="line"></div>
+            <select>
+              <option value="PLN">PLN</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+            </select>
+          </div>
+
+          <!------------------------------------------------------------>
+          <!-- PRZYCISKI -->
+          <!------------------------------------------------------------>
+
+          <!-- <div class="back"><button>Back</button></div> -->
+          <div class="next first"><button>Next</button></div>
+        </div>
+
+        <div class="box-second">
+          <div class="question question-second">
+            Jaka część z tego to gotówka, oszczędności inwestycje
+          </div>
+
+          <!------------------------------------------------------------>
+          <!-- SKALA -->
+          <!------------------------------------------------------------>
+          <div class="box-detail">
+            <div class="input-range">
+              <input type="range" class="percent" max="300"  value="100"/>
+              <span class="range">312</span>
+            </div>
+            <div class="input-range">
+              <input type="range" class="percent" max="300" value="100"/>
+              <span class="range">312</span>
+            </div>
+            <div class="input-range">
+              <input type="range" class="percent" max="300" value="100"/>
+              <span class="range">312</span>
+            </div>
+
+            <!------------------------------------------------------------>
+            <!-- PRZYCISKI -->
+            <!------------------------------------------------------------>
+
+            <div class="back back-first"><button>Back</button></div>
+            <div class="next next-third"><button>Next</button></div>
+          </div>
+        </div>
+        <div class="box-third">
+          <div class="question">Miesięczny dochód</div>
+          
+          <!------------------------------------------------------------>
+          <!-- KWOTA -->
+          <!------------------------------------------------------------>
+          
+          <div class="input">
+            <input type="number" id="money" placeholder="" />
+            <label for="money">Money</label>
+            <div class="line"></div>
+          </div>
+          <div class="box-check">
+            <div class="check">
+              <label for="lack" class="check-label">
+                <input type="checkbox" id="lack">
+                <span class="boxcheck"></span>
+                Brak
+              </label>
+            </div>
+          </div>
+          <div class="back back-second"><button>Back</button></div>
+          <a href="main.html"><div class="next"><button>Koniec</button></div></a>
+        </div>
+      </div>
+      <script src="przycisk.js"></script>
+      <script src="percent.js"></script>
+  </body>
+</html>

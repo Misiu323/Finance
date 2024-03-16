@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2fba8691ef.js"
+      crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance</title>
+  </head>
+  <body>
+    <!-- -------------------------------------------------------- -->
+    <!-- Nagłówek -->
+    <!-- -------------------------------------------------------- -->
+
+    <header>
+      <h1>Finance</h1>
+    </header>
+
+    <!-- -------------------------------------------------------- -->
+    <!-- Kwota na koncie -->
+    <!-- -------------------------------------------------------- -->
+
+    <section class="my-account">
+      <div class="konto">
+        <div class="konto-money">
+          <span class="ilosc">200</span>
+          <span class="waluta currency"> PLN</span>
+        </div>
+      </div>
+
+      <!-- -------------------------------------------------------- -->
+      <!-- Dodaj kwote -->
+      <!-- -------------------------------------------------------- -->
+
+      <a href="#"><i class="fa-solid fa-plus"></i></a>
+
+      <!-- -------------------------------------------------------- -->
+      <!-- Detaliczny stan konta -->
+      <!-- -------------------------------------------------------- -->
+
+      <div class="detail">
+        <div class="detail-div cash">
+          <span class="currency"
+            ><i class="fa-solid fa-money-bills fa-all"></i>PLN</span
+          >
+          <span>200</span>
+        </div>
+        <div class="detail-div seving">
+          <span class="currency"
+            ><i class="fa-solid fa-vault fa-all"></i> PLN</span
+          >
+          <span>200</span>
+        </div>
+        <div class="detail-div investments">
+          <span class="currency"
+            ><i class="fa-solid fa-arrow-trend-up fa-all"></i> PLN</span
+          >
+          <span>200</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------- -->
+    <!-- Najechanie na detale -->
+    <!-- -------------------------------------------------------- -->
+
+    <div class="box-hover">
+      <span>eloelo</span>
+    </div>
+
+    <!-- -------------------------------------------------------- -->
+    <!-- Kołowy wykres -->
+    <!-- -------------------------------------------------------- -->
+
+    <section class="statistics">
+      <div class="cyrcle">
+        <canvas id="myDonutChart" width="200" height="200"></canvas>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------- -->
+    <!-- Skrypty -->
+    <!-- -------------------------------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="kolo.js"></script>
+    <script src="hover.js"></script>
+    <script src="percent.js"></script>
+    <script type="module" src="Money.js"></script>
+  </body>
+</html>
