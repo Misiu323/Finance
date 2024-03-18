@@ -35,5 +35,5 @@ function wyswietl() {
     MaxMoney.value * (0.01 * (procent[2].value / 3))
   );
 }
-export { MaxMoney, liczba };
+// export { MaxMoney, liczba };
 // module.exports = { MaxMoney, liczba };

@@ -33,10 +33,10 @@ body {
   position: relative;
 }
 .box-start {
-  display: none;
+  /* display: none; */
 }
 .box-second {
-  /* display: none; */
+  display: none;
 }
 .box-third {
   display: none;
